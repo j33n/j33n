@@ -5,7 +5,7 @@ import { Home, About, Contact, Blog, Projects } from "../pages";
 
 import { Menu } from "../components";
 
-const router = () => {
+const App = () => {
 	return (
 		<Router>
 			<div>
@@ -34,4 +34,4 @@ const router = () => {
 	);
 };
 
-export default router;
+export default App;

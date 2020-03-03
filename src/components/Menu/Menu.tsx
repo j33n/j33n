@@ -10,13 +10,13 @@ const Card = () => {
 		<div className="menu">
 			<div className="links-left">
 				<span><Link to="/about">About</Link></span>
-				<span><Link to="/blog">Blog</Link></span>
+				{/* <span><Link to="/blog">Blog</Link></span> */}
 			</div>
 			<div className="logo">
 				<span><Link to="/"><img src={Logo} alt="" /></Link></span>
 			</div>
 			<div className="links-right">
-				<span><Link to="/projects">Projects</Link></span>
+				{/* <span><Link to="/projects">Projects</Link></span> */}
 				<span><Link to="/contact">Contact</Link></span>
 			</div>
 			<div className="repo">

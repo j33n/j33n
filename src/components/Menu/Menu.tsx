@@ -1,16 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Logo, githubIcon } from '../../assets'
+
+import './Menu.scss';
+
 const Card = () => {
 	return (
-		<div className="card">
-			<ul>
-				<li><Link to="/">Home</Link></li>
-				<li><Link to="/about">About</Link></li>
-				<li><Link to="/blog">Blog</Link></li>
-				<li><Link to="/projects">Projects</Link></li>
-				<li><Link to="/contact">Contact</Link></li>
-			</ul>
+		<div className="menu">
+			<div className="links-left">
+				<span><Link to="/about">About</Link></span>
+				<span><Link to="/blog">Blog</Link></span>
+			</div>
+			<div className="logo">
+				<span><Link to="/"><img src={Logo} alt="" /></Link></span>
+			</div>
+			<div className="links-right">
+				<span><Link to="/projects">Projects</Link></span>
+				<span><Link to="/contact">Contact</Link></span>
+			</div>
+			<div className="repo">
+				<a href="https://github.com/j33n" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="" /></a>
+			</div>
 		</div>
 	);
 };

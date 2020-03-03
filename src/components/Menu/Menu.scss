@@ -1,0 +1,64 @@
+.menu {
+	display: flex;
+	font-size: 1rem;
+	text-align: center;
+	height: 5rem;
+	background: rgba(132, 132, 132, 0.05);
+
+	a {
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+
+	.links-left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+
+		span {
+			display: block;
+			width: 50%;
+		}
+	}
+
+	.links-right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+
+		span {
+			display: block;
+			width: 50%;
+		}
+	}
+
+	.logo {
+		display: flex;
+		width: 10%;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			height: 50px;
+		}
+	}
+
+	.repo {
+		width: 10%;
+		position: absolute;
+		right: 0;
+		display: flex;
+		justify-content: flex-end;
+
+		img {
+			cursor: pointer;
+			height: 5rem;
+
+			&:hover {
+				height: 5.1rem;
+			}
+		}
+	}
+}

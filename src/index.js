@@ -1,10 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import WebFont from "webfontloader";
+import * as serviceWorker from "./serviceWorker";
 
 import "./index.scss";
 
 import Router from "./router";
-import * as serviceWorker from "./serviceWorker";
+
+// Load fonts
+WebFont.load({
+	google: {
+		families: ["Maven Pro:400,500,600", "sans-serif"]
+	}
+});
 
 ReactDOM.render(<Router />, document.getElementById("root"));
 
